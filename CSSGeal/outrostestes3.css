@@ -1,0 +1,50 @@
+.testefloat{
+    border: 2px solid red;
+    overflow: auto;
+}
+
+.testefloat img{
+    float: left; /*desta maneira a imagem irá ficar flutuando a esquerda, é como ela saisse do fluxo normal, tipo sair do display block q é o natural das img*/
+    margin-right: 15px;
+}
+
+ul{
+    background-color: black;
+    padding: 20px;
+}
+
+li{
+    display: inline-block;
+}
+
+li a{
+    color: red;
+    padding: 20px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: blue;
+    color: white;
+}
+
+.teste{
+    float: right;
+}
+
+.teste a:hover{
+    background-color: brown;
+    color: blue;
+}
+
+a.opacidade{
+    padding: 20px;
+    background-color: green;
+    text-decoration: none;
+    color: white;
+}
+
+a.opacidade:hover{
+    opacity: 0.7; /*deixa mais claro, tipo transparente, vai de 0.1 até 1, o 1 é normal*/
+    font-size: 30px;
+}

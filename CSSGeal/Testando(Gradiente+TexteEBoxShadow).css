@@ -1,0 +1,55 @@
+body{
+    background-image:linear-gradient(to bottom right, rgb(107, 103, 103), rgb(182, 170, 170));
+}
+
+#gradiente{
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(to top left, blue, yellow); /*com essa propriedade, será feito o efeito gradiente, primeiro vc coloca a posição q vc quer nesse caso, a cor iria para o topo a esquerda, e depois vc esoclher as cores do radiente, separando tudo com vírgula. Se quiser dá para colar em graus, é só por na posição ex: 180deg*/
+}
+
+#multiplicando{
+    text-shadow: 0px 0px 5px blue, 2px 3px 9px green; 
+    /* Repetindo o processo vc consegue fazer várias sombras */
+}
+
+#radius{
+    width: 100%;
+    height: 300px;
+    background-image: radial-gradient(blue 30%, red); /*Esse faz um efeito circular, sem posição, caso queira pode colocar pocentagem ao lado da cor e aumentar tom da cor*/
+}
+
+h1{
+    text-shadow: 3px 5px 3px green; /*Esse efeito faz com q o texto tenha um sombreado, começa dando o tamanha na horizonta, vertical, o desfoque q vc quer no sombreado(a suavizada) e a cor*/
+}
+
+.box{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    box-shadow: 7px 9px red; 
+    /* È a mesma situação do texte shadow, só q esse é para um bloco inteiro, n só para font, é utilizado para fazer card também, qualquer coisa é só pesquisar as configurações q devem ser usadas para fazer um cardo ou olhar o exemplo abaixo*/
+}
+
+.card{
+    width: 100%;
+    text-align: center;
+    height: auto; 
+    /* para ele se ajustar com o tamanho do texto automaticamente */
+    background-color: white;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2), 0px 6px 20px 0px rgba(0,0,0,0.19) ;
+}
+
+.voureduzir{
+    white-space: nowrap;
+    /* Essa propriedade faz com que todo o texto fique em uma linha só */
+    overflow: hidden;
+    /* Ele escondeu a parte q ficou para fora do bloco */
+    text-overflow: ellipsis;
+    /* Essa propriedade faz com que, quando o texto some, por conta do hiddem(Pq ele saiu do bloco), ele irá colocar os tres pontos, assim q ele identificar q o hidden vai entrar em ação */
+}
+
+.card:hover .voureduzir{
+    white-space: normal;
+}
+    

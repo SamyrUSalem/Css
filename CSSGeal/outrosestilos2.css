@@ -1,0 +1,103 @@
+.ola{
+    max-width: 900px; /*essa propriedade colcoar o maximo de largura q pode ter, quando tiver menos px ela irá se adaptar sem a barra de rolagem embaixo, isso faz uma interface responsiva*/
+}
+
+.opa{
+    width: 900px;
+}
+
+.container{
+    background-color: yellow;
+    width: 100%;
+    height: 400px;
+    display: inline-block;
+    position: relative;
+}
+
+.testeposimg{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    z-index: 1;
+    height: 400px;
+    border: 2px solid red;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    
+}
+
+.testeimg{
+    display: inline-block;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    z-index: 999;
+}
+
+
+
+
+
+/*J á nativo das tags utilizar o positions static*/
+.position1{
+    position: relative; /*com essa posição vc pode escolher para onde o bloco vai, a posição vai ser relativa a que, nesse caso eu coloquei o left, com isso ele ficou encima do outro, diferente da margem q adaptaria os outros*/
+    left: 40px;
+    background-color: red;
+    display: inline-block;
+    width: 30%;
+    height: 100px;
+    z-index: 3;/*com essa propriedade eu escolho qual vai estar na frente, se eu colocar essa propreidade em outra tag, classe, etcc.. mas com o número maior, ele irá ficar na frente, se for menor irá ficar atrás*/
+}
+
+.position2{
+    position: relative;
+    z-index: 4;
+    background-color: blue;
+    display: inline-block;
+    width: 30%;
+    height: 100px;
+}
+
+.position3{
+    background-color: aquamarine;
+    display: inline-block;
+    width: 30%;
+    height: 100px;
+    position:absolute; /*com esse posicionamento é possível deslocar a classe, tag ,etc... dentro da sua tag pai, nesse caso é a div container, q esta com o fundo amarelo, mas para funcioanr a tag pai n podere estar na posição static, q é a padrão q vem*/
+    /*agora eu irei falar as posições q ela deve se afastar, nesse caso foi q ela tem q se afastar 40 px do top, e 80 px para o right*/
+    top: 40px;
+    right: 80px;
+}
+.position4{
+    background-color: green;
+    display: inline-block;
+    width: 30%;
+    height: 100px;
+    position: sticky; /*com essa posição, quando a pessoa descer a barra de rolaagem ele ira ficar preso em algum canto q será definido, nesse caso é o top, q foi colaco 0, pois ele terá 0 de espaçamento em relação ao topo, quando descer ele irá ficar preso no topo, mas apenas dentro da tag pai*/
+    top: 0;
+}
+
+.fixo{
+    background-color: black;
+    color: white;
+    width: 20%;
+    height: 60px;
+    position: fixed;
+    bottom: 10px; /*primeiramente eu coloquei o valor de bottom e right = 0, com isso ele ficou com 0 de espaçamento em relação a essas posições, então ele ficou colado, após isso eu subistitui o 0 pela quantidade de pixel q queria q se afastasse da borda.(É para colocar a posição q vc quer parecido com o relative)*/ 
+    right: 10px;
+}
+
+.TesteOverFlow{
+    /*O overflow visible é oq é usado naturalmente, independedente do tamanho q é usado np height, ele vai mostrar o texto, e o overflow é usado quando tem um height difinido*/
+    background-color: red;
+    height: 100px;
+    overflow: scroll; /*tem o scroll, q usa barra de rolamento quando o texto n da, tem o hidden q esconde o tesxto q n cabe no tamanho, tem o auto q usa a barra de rolamento caso seja necessário, se n for ele deixa o tamanho normal*/
+
+     /*caso queira tirar a barra de rolagem do eixo y(de cima pra baixo) é só colocar o overflow-y:hidden, no eixo x é 0 mesm0 sentido, NA TAG BODY*/
+}
+
+

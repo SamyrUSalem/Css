@@ -1,0 +1,68 @@
+/* Cada situação a seguir é para adaptar a tela para o aparelho q está dizendo na legendda, ou q possui a quantidade de pixel q esta no width, com isso , por exemplo: vai ter configurações até aparelho com a tela de 600px e depois pode ter outras config par aparelhos com mais pixel, e por ai vai */
+
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: yellow;
+    }
+
+    .opa{
+        display: none;
+    }
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+    body{
+        background-color: aqua;
+    }
+    .opa{
+        display: none;
+        }
+
+}
+
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+    body{
+        background-color: black;
+        color: white;
+    }
+    .opa{
+        display: none;
+    }
+
+}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+    body{
+        background-color: green;
+        /* background-image:radial-gradient(blue, gray, black); */
+}
+
+.opa{
+    display: none;
+}
+
+}
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px){
+
+    body{
+      background-color: red;
+    }
+
+    .ola{
+        display: none;
+    }
+
+    .opa{
+        margin-right:300px;
+        text-shadow: 2px 3px 3px blue;
+        color: green;
+        display: inline-block;
+    }
+}

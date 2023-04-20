@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste do CSS</title>
+    <!--Esse link abaixo, é para puxar as configurações de CSS q esta no outro arquivo, o rel styleheet é para identificar q uma folha de estilo será usada, o href é o caminho do arquivo em css. Com isso da para alterar atraves de um arquivo o css de todas as páginas q o site possui-->
+    <link rel="stylesheet" href="CSSGeal/testeflexbox.css">
+</head>
+<body>
+    <h1>FlexBox, se adapta mais ao tamanho da tela </h1>
+    <div class="pai">
+        <div> 1 teste</div>
+        <div> 2 teste</div>
+        <div> 3 teste</div>
+        <div> 4 teste</div>
+        <div> 5 teste</div>
+        <div> 6 teste</div>
+        <div> 7 teste</div>
+        <div> 8 teste</div>
+        <div> 9 teste</div>
+        <div> 10 teste</div>
+    </div>
+<br> <br><br>
+    <div class="pai2">
+        <div> 1 teste</div>
+        <div> 2 teste</div>
+        <div> 3 teste</div>
+        <div> 4 teste</div>
+        <div> 5 teste</div>
+        <div> 6 teste</div>
+        <div> 7 teste</div>
+        <div> 8 teste</div>
+        <div> 9 teste</div>
+        <div> 10 teste</div>
+        <div> 11 teste</div>
+        <div> 12 teste</div>
+
+    </div>
+    <br> <br><br><br> <br><br><br> <br><br>
+    <div class="pai3">
+        <div> 1 teste</div>
+        <div> 2 teste</div>
+        <div> 3 teste</div>
+        <div> 4 teste</div>
+        <div style="flex-grow: 4;"> 5 teste</div>
+    </div>
+    <br> <br><br><br> <br><br><br> <br><br>
+    <div class="pai4">]
+
+        <!--Usando esse flex, é posspivel alterar o tamanho do bloco, e com a configuração colcoada no começo do código, todas as configuranções aplciadas  de margin, padding, etc... será integrada nos blocos, e com essas porcentagens é possível definir os tamanhos deles na linha, coluna,etc... -->
+        <div style="flex: 50%;"> 1 teste</div>
+        <div style="flex: 50%;"> 2 teste</div>
+        <div style="flex: 80%;"> 3 teste</div>
+        <div style="flex: 20%"> 4 teste</div>
+        <div style="flex: 100%;"> 5 teste</div>
+    </div>
+    <br> <br><br><br> <br><br><br> <br><br>
+</body>
+</html>

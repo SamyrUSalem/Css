@@ -1,0 +1,53 @@
+.cabecalho{
+    background-color: aqua;
+    padding: 70px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.cabecalho p{
+    color: red;
+    font-size: 15px;
+}
+
+.navegando{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    background-color: black;
+    
+}
+
+.navegando a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 9px;
+}
+
+.navegando a:hover{
+    background-color: yellow;
+    font-weight: bold;
+    color: black;
+    padding: 18px 12px;
+}
+
+@media screen and (max-width:700px){
+    .navegando{
+        flex-direction: column;
+    }
+}
+
+.ola{
+    display: flex;
+    flex-flow: row wrap;
+}
+.cartao{
+    height: 100px;
+    background-color:gray ;
+    flex-grow: 1;
+    margin: 1%;
+
+    
+
+}

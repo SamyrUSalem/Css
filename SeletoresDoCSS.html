@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste do CSS</title>
+    <!--Esse link abaixo, é para puxar as configurações de CSS q esta no outro arquivo, o rel styleheet é para identificar q uma folha de estilo será usada, o href é o caminho do arquivo em css. Com isso da para alterar atraves de um arquivo o css de todas as páginas q o site possui-->
+    <link rel="stylesheet" href="TesteCSSGeral/estilo(CSSExterno).css">
+</head>
+<body>
+    <!--A clase é uma maneira de filtrar, tipo no documento de estilo CSS, será colocado para definir o estilo de uma classe assim: .cor = tem q ter o ponto, ai apenas aqueles q estão com essa clase serão afetados, quando é tag, n precisa do ponto. Pode ter no estilo h1= color:red e a classe .cor=color: green, aqueles q n estao nessa classe ficarão vermelhos, aqueles q estão ficarão verde-->
+    <!--Caso queria colocar mais uma classe é só adicionar ao lado, como abaixo q tem a classe cor e tamanho-->
+   <h1 class="cor tamanho">Vamo fazer o teste do css, foi criado uma pasta para o css q será usada para aplicar o estilo de maneira geral no site, se mudar nesse arquivo irá mudar em todos <!--a classe tem mais prioriedade do q um seletor simples, tipo: Quando eu uso um css interno h1 e o meu h1 esta com uma classe "ola", no css externo, aquele com mais prioredade é a classe-->
+   </h1>
+   <p>Link para testar em outra <a href="VamosFazerOTesteDoCSSGeral.html"> aba</a></p>
+   <p id="primeiro">Esse q eu vou usar agora, no lado do p é o ID, ele é tipo o class mas só para uma tag, o class vc pode  padronizar ele no css e ficar distribuindo em várias tags, o ID é único, somente uma tag poderá usar ele, e n pode repetir o nome dos IDS(e n pode começar com números). È só ir no documento do css e colocar: #nomedoID{}, e depois faz q nem os outros </p> <!--o ID tem mais prioriedade q uma classe e tag simples-->
+
+   <p><mark><b> Algo que pode ser feito é usar um estilo para todo o site, é só colocar *{}, desta maenira tudo q tiver ai vai ser usado para todo site</b></mark></p>
+
+   <!--Quando tem o seletor e a classe juntos, eles tem mais prioriedade q a tag simples, classe e o id, tipo( body .ola{})-->
+
+   <!--Caso tenha vários seletores apontados para a mesma tag, tipo: h1{background: orange}, ai outras duas cores, aquele q tem mais prioriedade é o último, no caso n seria o orange, mas aquele q ta mais embaixo-->
+
+   <!--ORDEM DE PRIORIEDADE
+        #ID
+        Tag .Classe
+        .Classe
+        Tag-->
+<!--Caso queria burlar essa regra, é só colocar !important, no estilo q vc quer q tenha prioriedade-->
+</body>
+</html>

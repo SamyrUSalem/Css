@@ -1,0 +1,50 @@
+ul{
+    background-color: greenyellow;
+    list-style-type: none; /*com isso ele tira os estilos das listas, tipo um text decoration, mas para listas*/
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /*Antes tava tudo branco, mas essa propriedad faz com q tudo q n estiver nesse bloco suma, então ele fez com q o bloco aparecesse(q no caso é o fundo q eu coloquei) */
+}
+
+li{
+    float: left; /*Desta maneira posso fazer tipo um display inline-block, juntar tudo, mas sem precisar mexer na li q esta no html*/
+}
+
+li a, .botaodrop{
+    display: inline-block; /*para deixar o link em block também, para n ficar colado no menu*/
+    padding: 8px 10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+
+}
+
+li a:hover, .dropdown:hover .botaodrop{ /*Desta maneira, com o dropdown:hover e o botaodrop sem nada, quer dizer q toda vez que o dropdown estiver ativado(por causa q o mouse ficou encima), o botaodrop tambem ficará ativado*/
+    background-color: blue;
+}
+
+li .dropdown{
+   display: inline-block; 
+}
+
+.conteudodrop{
+    position: absolute; /*com essa posição, ele vai agir de acordo com a tag pai, q seria a tag de cima mais próxima, no caso o li dropdown, com isso ele vai se deslocar/ativar conforme o pai*/
+    background-color: white;
+    width: 150px;
+    display: none; /*para ele desaparecer, para o natural dele ser desaparecido*/
+}
+
+.conteudodrop a{
+    color: orange;
+    text-align: left;
+    display: block;
+    border: 1px dotted black;
+}
+
+.dropdown:hover .conteudodrop{
+    display: block; /*isso quer dizer q , quando o dropdown: hover (mouse passar por cima) o conteudodrop terá o display block*/
+}
+
+.conteudodrop a:hover{
+    color: black;
+}

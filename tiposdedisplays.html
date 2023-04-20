@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste do CSS</title>
+    <!--Esse link abaixo, é para puxar as configurações de CSS q esta no outro arquivo, o rel styleheet é para identificar q uma folha de estilo será usada, o href é o caminho do arquivo em css. Com isso da para alterar atraves de um arquivo o css de todas as páginas q o site possui-->
+    <link rel="stylesheet" href="CSSGeal/estilo(CSSExterno).css">
+</head>
+<body>
+    
+        <h1>Vou testar o CSS do background</h1>
+
+        <p class="propriedadesdotexto">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit enim non reiciendis velit ipsum, tenetur totam temporibus iusto minus dignissimos aliquid quod inventore deleniti deserunt exercitationem minima eveniet numquam rerum!</p>
+
+        <p class="fonte"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempore tempora blanditiis perspiciatis! Assumenda atque quaerat quos cumque! Velit pariatur enim suscipit atque magni error sit, esse quidem dignissimos asperiores?</p>
+       
+
+        <p class="opa"> esse é o <a href="SeletoresDoCSS.html"> link</a></p>
+    </div>
+
+    <div>
+        <h2>Tipos de display</h2>
+        <p>Os paragrafos, h1, divs, forms, header, footer e section, são exemplos de display em bolocos, quando colocar algum estilo de css nele, o mesmo cobre a página inteira, </p>
+
+        <p>Os displyes in line, sãoa queles q n quebram linha e n preenchem a página toda, como os links, imagens e o span, ficam um do lado do outro e se colocar um estilo, só preenche a quantidade de letra se tiver</p>
+
+        <p class="display">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem reiciendis eveniet praesentium quos alias tenetur. Suscipit voluptate incidunt omnis molestias nisi quis fugiat! Quo sapiente sunt eligendi exercitationem earum quae!</p>
+        <p class="display">Iure suscipit molestiae corporis minus? Illum, alias! Consequatur nesciunt veniam, commodi temporibus tempora cum obcaecati explicabo reprehenderit beatae quidem minima hic voluptate amet voluptatum, molestias odio, esse debitis soluta dolor!</p> <!--O paragrafo é um bloco, mas caso eu queira deixar ele inline, sem quebra de linha e sem preencher a página toda, é só colocar display: inline;-->
+    </div>
+
+
+    <!--o ul é u mdisplay block, agora ele foi colocado como inline, mas ainda assim fica um espaço entre as palavras, para resolver isso é só colocar tudo em uma linha-->
+    <ul>
+        <li class="verde">Primeiro teste</li><li class="vermelho">Segundo teste</li><li class="amarelo">Terceiro teste</li>
+    </ul>
+
+    <div class="verde dv">
+        alguma coisa
+    </div>
+    <!--Caso queira q ele desapareça, mas n fique inativo como o display:none;, use o visibility:hidden; desta maneira ele vai desaparecer mas o seu lugar n sera ocupado-->
+    <div class="vermelho dv" style="visibility: hidden;"> 
+        alguma coisa
+    </div>
+    <div class="amarelo dv">
+        alguma coisa
+    </div>
+
+
+</body>
+</html>

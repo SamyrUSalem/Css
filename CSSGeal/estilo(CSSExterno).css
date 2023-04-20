@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+body{
+    background-color: rgb(37, 223, 223);
+       
+}
+
+.cor{
+    color: white;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    border: 1px dotted black; /*existem vários estilos de bordas, como: solid, o dotted(monte de pontos), dashed: com traços. double:são duas bordas, groove:efeito 3d. Tem como mudar as bordas de cada lado, é só colocar border-lef, border-right, border-bottom(para baixo) ou a posição q vc quer, com isso da para fazer uma borda com diferentes cores em cada lado*/
+    border-radius: 30px; /*essa propriedade faz com que a borda fique arredondada, de acordo com a quantidade de pixel*/
+
+    margin-bottom: 30px; /*essa é a propiedade de margem, escolho a posição q quero da margem e coloco a quantidade de pixel q quero afasta ou coloque a % q vc quer afastarr, ou poderia colocar em uma linha só, tipo: margin:30 px 40px 70px 50px; , começando do topo e depois ara direita, ai embaixo e depois a esquerda*/
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 50px;
+
+    padding-bottom: 40px; /*essa propriedade é semelhante a margin, só q ele abra um espaço dentro do prórpio bloco, invez de de fazer com que o bloco de um espaço igual a margin, pode ser feito em posições ou em uma linha igual a margin, e se colocar padding: 50px; , ele irá deixar todos os lados com o espaçamento de 50px, ele é muito usado para fazer botão*/
+    max-width: 500px; /*deta maneira  alargura maxima do h1 vai ser de 500px, n adianta esticar a tela*/
+}
+/*quando tem o ponto quer dizer q é uma classe*/
+.tamanho{
+    font-size: 30px;
+}
+/* esse com a # é o ID*/
+#primeiro{
+    background-color: black;
+    color: blue;
+}
+
+#ola{
+    opacity: 0.7;/* com isso a opacidade irá aumentar, a imagem irá ficar mais clara(tipo transparente), vai de 0.1 até 1(o 1 é o 100%)*/
+    color: white; /*cor da fonte*/
+    background-size: cover; /* para ajusatr o tamanho da imagem, cover é igual ao 100%*/
+    background-repeat: no-repeat; /*quando a imagem n encaixa certo no tamanho do bloco, ela fica se repetindo, com esse atributo isso n vai acontecer ou pode colocar repeat-x q ele vai repetir para os lados ou repeat-y q vai ser pra baixo.*/
+    height: 300px; /*altura do bloco*/
+    background-color: green; /*caso n tenha imagem, essa vai ser a cor do fundo*/
+    background-image:url("../Img/vikings1.jpg");
+    background-position: center /*para ajustar a posição*/
+
+    /*daria para colocar o repeat, color, imagem e position tudo junto, tipo: background: green center no-repeat url("../Img/vikings1.jpg); só o size teria q ficar separado.*/
+}
+
+.opa{
+    color: white;
+    background-color: black;
+    background-position: center;
+    padding: 30px 40px 30px 40px;
+    border-radius: 20px;
+    width: 30%;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+/*o HOVER SIGNIfica q toda vez q o mouse passar por cima vai acontecer alguma coisa, nesse caso o fundo vai ficar vermelho*/
+.opa:hover{
+    background-color:red;
+}
+
+.propriedadesdotexto{
+    color: white;
+    text-align: justify; /*tem como colocar right, left, center, tipo os documentos do google.*/
+    text-decoration: line-through; /*Esse efeito faz ter um traço no meio da palavra, tambem tem: o underline(traço embaixo), overline(encima), o none q é sem efeito, normalmente usado para tirar as linhas dos links*/
+    text-transform: uppercase; /*com essa propriedade, da para deixar todas as letras maiusculas , q nem esta agora, da para usar o lowercase e deixa tudo em minusculo ou o capitalize q é para deixar somente a primeira letra em maiusculo*/
+    text-indent: 30px; /*com essa propriedade da para deixar um espaçamento no começo do apragrafo, tipo um tab nos documentos do google*/
+    letter-spacing: 2px; /*é usado para da um espaço entre as letras, nesse caso de 2pixel*/
+    line-height: 0.9; /*normalmente é usado em decimal, essa propriedae é para dar um espaçamento entre asa linhas*/
+    word-spacing: 20px; /*essa propriedade da um espaçamento entre as palavras, nesse caso de 20px*/
+}
+
+.fonte{
+    font-family: 'Zeyada', cursive;  /*Essa propriedade muda a fontes q esta sendo usada, caso queira usar uma q n tenha na lista, é só ir no google fonts, escolher qual vc quer, a pertar em importar e colocar o link la encima desse documento, e depois copie e cole o font-family no bloco q vc quer, como foi feito nesse caso de agora*/
+    
+    font-size: 30px; /*muda o tamanho da fonte*/
+
+    font-style: italic; /*esse muda o estilo, tem o italico, normal e o obliquio q é um pouco mais inclinado*/
+
+    font-weight: bold; /*essa propriedade é para colocar a grossura da letra, no caso de bold é negrito*/
+}
+/*Com o ar na frente, quer dizer q somente links podem usar essa class*/
+
+a.botao1{
+    color: white;
+    background-color: green ;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 4px solid greenyellow;
+    margin-left: 220px;
+
+}
+a.botao1:hover{
+    background-color: rgb(19, 216, 19) ;
+    padding: 15px;
+    border: 4px solid rgb(116, 175, 28);
+}
+
+a.botao2{
+    color: yellow;
+    border: 5px double gray;
+    padding: 8px;
+    text-decoration: none;
+}
+
+a.botao2:hover{
+    color: white;
+    padding: 6px;
+    background-color: blue;
+    text-decoration: underline;
+}
+
+a.botao3{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+a.botao3:hover{
+    color: blue;
+    border-bottom:5px solid yellow;
+}
+
+a.botao4{
+    color: black;
+    text-decoration: none;
+    font-size:18px;
+}
+
+a.botao4:hover{
+    font-size:25px;
+    font-weight: bold;
+}
+
+a.botao5{
+    cursor: wait; /*com essa propriedade, vc escolhe oq vai acontecer com o cursor do mouse quando ele fica encima desse link, o none: ele desaparece, o wait:fica com sinal de carregando, text:fica com o sinal q vai escrever e o hel: fuca com o sinal de duvida*/
+}
+.display{
+    display: inline; /*com isso as tags q são blocos ficam inline*/
+}
+
+
+/*quando é colocado o inline-block, ele herda caracterisitcas dos dois, se fosse só o inline , n daria para mudar o width e o height*/
+li{
+    display: inline-block;
+    width: 33%;
+    height: 140px;
+    text-align: center;
+
+}
+.verde{
+    background-color: green;
+}
+
+.vermelho{
+    background-color: red;
+}
+
+.amarelo{
+    background-color: yellow;
+}
+
+.dv{
+    height: 130px;
+    width: 20%;
+    display: inline-block;
+}

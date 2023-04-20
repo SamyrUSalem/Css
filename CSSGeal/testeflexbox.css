@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box; /*com essa propriedade, os blocos vão ter todas as configurações q foram colacadaas nesse arquivo e o * é pq esse é um estilo q será usado em todo o documento*/
+}
+
+.pai{
+    background-color: green;
+    display: flex;/* Essa propriedade é a mais atual para para fazer disgners responsivos, ela consta várias funcionalidades, invez de usar o float left ou inline-block, tudo ficou um lado do outro só usando ela */
+    flex-direction: row;/* Dessa maneira eu posso escolher a direção, se eu quero em forma de coluna ou linhas, no caso de linhas irá ficar um do lado do outro, de coluno um embaixo do outro, tipo no block.  */
+    /* É possível usar a propriedade column-reverse, se tem 123 embaixo um do outro, ele deixará 321, caso esteja em row, ele jogaria tudo para a direia e e deixa em 321  */
+    flex-wrap: wrap; /* O nowrap é o padrão q  é usado o flex se adapta ao tamaho da tela caso estique ela, mas se n esticar ele vai acabar engolindo alguns conteúdos e vai precisar de uma barra de rolagem, a propriedade wrap vai fazer com q assim q n dé na tela, ele ira adpta-la colocando embaixo o restante */
+
+    flex-flow: row wrap;/* Com essa propriedade, da para juntar o directior e o wrap em uma linha só, primeiro vem o direction: ; */
+}
+
+.pai div{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px;
+    background-color: red;
+}
+
+.pai2{
+    background-color: blueviolet;
+    flex-flow: row wrap;
+    display: flex;
+    height: 500px;
+    justify-content: space-around; /*Essa propriedade é para eu controlar o item na parte horizontal da tag pai, tipo usar os position(absoluty,relative,etc...), só q usando o flex, o flex-start deixa no inicio, a esquerda, flex-end no fim a direita e tem o center*/
+    /*com o space-between, ele irá criar um espaço uniforme entre os itens, já o space-around, vai criar um espaçõ em volta dos itens*/
+
+    align-items: center;/*esse é para mexer na vertical, o star é encima o end é embaixo e tem o center, com eles da para deixar os itens na posição q queremos, ele naturalemnte vem no scratch, com isso ele irá querer preencher a area toda, mas quando trocar para uma das posições acima, será diferente*/
+    align-content: center; /*com o aling-content, ele faz quase a mesma coisa q o align-items, só q ele deixa tudo junto, ele mexe com tudo junto, o item move os itens de modo separado, quando usamos o center com o items, e existe vários blocos, vai ficar meio estranho tudo separado, o content vai organizar melhor, pois vai juntar tudo*/
+}
+
+.pai2 div{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px;
+    background-color: red;
+}
+
+.pai3{
+    background-color: rgb(226, 43, 43);
+    flex-flow: row wrap;
+    display: flex;
+    height: 500px;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.pai3 div{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px;
+    background-color: rgb(0, 235, 20);
+    flex-grow: 1; /*essa propriedade seria para definir o crescimento da div, ela deve ser colacada apenas na tag filho, ela controla o crescimento , nesse caso tudo esta uniforme com o crecimento(tipo um padding) 1, caso uma tenha q ser maior q a outra é só criar uma classe ou colar id, ou por dentro da própria tag o flex-grow: 3; por exemplo. Ele irá se apdatar o tamnanho conforme aa tela*/
+}
+
+.pai4{
+    background-color: rgb(27, 104, 68);
+    flex-flow: row wrap;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-content: center;
+}
+
+.pai4 div{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: rgb(0, 235, 20);
+    
+}
