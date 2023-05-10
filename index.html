@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste do CSS</title>
     <!--Esse link abaixo, é para puxar as configurações de CSS q esta no outro arquivo, o rel styleheet é para identificar q uma folha de estilo será usada, o href é o caminho do arquivo em css. Com isso da para alterar atraves de um arquivo o css de todas as páginas q o site possui-->
-    <link rel="stylesheet" href="CSSGeal/miniprojetoflex+etc.css">
+    <link rel="stylesheet" href="CSSGeal/MaisSeletores.css">
 </head>
+
 <body>
-  
+    <ul>
+        <li><!--Dessa forma, o a não é mais filho do li, mas sim da div(complementado aquilo q esta no css)-->
+            <div>
+                <a href="#">ola</a>
+            </div>
+        </li>
+        <li><a href="#">ola</a></li>
+        <li><a href="#">ola</a></li>
+        <li><a href="#">ola</a></li>
+        <li><a href="#">ola</a></li>
+    </ul>
 </body>
+
 </html>
