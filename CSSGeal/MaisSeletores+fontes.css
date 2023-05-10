@@ -1,0 +1,38 @@
+/*Seletor para tudo q tem na página*/
+* {
+    font-size: 30px;
+}
+
+/*È importante acrescentar mais de um tipo de fonte, pq pode ser q algum navegador n tenha a fonte q esta definida aqui, nesse caso ele iria para a segunda q é a Helvetica, e por ai vai indo*/
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*Dessa  maneira todos q são filhos do li, serão afetados*/
+li>a {
+    color: red;
+}
+
+/*Dessa maneira, todos os "p" q vinherem depois de um h1, serão modificados*/
+h1+p {
+    font-weight: bold;
+    color: aqua;
+}
+
+/*Dessa forma, eu estou modificando apenas os "a" que possuem esse atributo*/
+a[href="CSSInLine.html"] {
+    color: brown;
+    text-decoration: none;
+}
+
+
+#ola {
+    border: 1px solid black;
+}
+
+/*Usando o inherit, o "ol" vai herdar as mesmas propriedades q o pai dele, q no caso é a div com o id "ola"*/
+#ola ol {
+    border: inherit;
+}
